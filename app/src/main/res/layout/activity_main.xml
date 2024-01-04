@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    tools:context=".MainActivity">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <com.google.android.material.textfield.TextInputEditText
+          android:layout_marginBottom="10dp"
+          android:hint="@string/name"
+          android:id="@+id/Name"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+
+      <com.google.android.material.textfield.TextInputEditText
+          android:layout_marginBottom="10dp"
+          android:hint="@string/branch"
+          android:id="@+id/branch"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+
+      <com.google.android.material.textfield.TextInputEditText
+          android:layout_marginBottom="10dp"
+          android:hint="@string/location"
+          android:id="@+id/location"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+  </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/saveBtn"
+        android:minHeight="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/save_employee"/>
+
+</RelativeLayout>
